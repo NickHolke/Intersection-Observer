@@ -17,11 +17,13 @@
   align-items: center;
   padding: 5px;
   margin-right: 800px;
-  transition: margin-right 1s ease-in-out;
+  opacity: 0;
+  transition: margin-right 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .graph-show {
   margin-right: 0px;
+  opacity: 1;
 }
 
 .bar-background {
