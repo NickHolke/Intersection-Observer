@@ -1,0 +1,56 @@
+.top-div {
+  height: 100vh;
+  background: rgb(232, 232, 232);
+}
+
+.bot-div {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-right: 800px;
+  transition: margin-right 1s ease-in-out;
+}
+
+.graph-show {
+  margin-right: 0px;
+}
+
+.bar-background {
+  height: 30px;
+  width: 400px;
+  background: rgb(232, 232, 232);
+  margin: 5px;
+}
+
+.bar {
+  background: teal;
+  height: 100%;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition:transform 600ms cubic-bezier(.5,.25,.51,1);
+}
+
+.bar1 {
+  width: 90%;
+  transition-delay: 800ms;
+}
+
+.bar2 {
+  width: 80%;
+  transition-delay: 1000ms;
+}
+
+.bar-grow {
+  opacity: 1;
+  transform: scaleX(1);
+}
